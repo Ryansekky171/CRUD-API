@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Tw144JnbQ9IeqXmfmK1Apg8iFCmSTeQL7Ii/nJPj4LlzZBxC4Q8k3FqlGd+5fziF" crossorigin="anonymous">
+    <title>Teste CRUD de Viagens</title>
+</head>
+<body>
+
+<div class="container mt-5">
+    <h1>Teste CRUD de Viagens</h1>
+    
+    <!-- Formulário de Nova Viagem -->
+    <form id="formNovaViagem">
+        <h2>Nova Viagem</h2>
+        <label for="destino">Destino:</label>
+        <input type="text" id="destino" required>
+        <label for="descricao">Descrição:</label>
+        <textarea id="descricao" required></textarea>
+        <label for="data_partida">Data de Partida:</label>
+        <input type="date" id="data_partida" required>
+        <label for="data_retorno">Data de Retorno:</label>
+        <input type="date" id="data_retorno" required>
+        <button type="button" onclick="criarViagem()">Criar Viagem</button>
+    </form>
+
+    <!-- Lista de Viagens -->
+    <h2>Lista de Viagens</h2>
+    <ul id="listaViagens"></ul>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-cVww+2JWDL83dFb6IMDcXt6uu1a2yi5zq2wR8k4fKI3zSsrbgs/wRpih1TuOe1pY" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha384-nvOqXRRZEBdHCrnI3J/PmtcLw+q8Y9IYTQ1qOs7xe9GFKtPoaPPOH2tXSTeN8Fq/9" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
